@@ -1,0 +1,99 @@
+@media (max-width:768px) {
+    nav .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1000;
+        color: #fff;
+        border: solid;
+        background-color: transparent;
+        padding: 1rem 1.3rem;
+
+        i {
+            display: block;
+        }
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(89, 100, 62, .9);
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 15px 0;
+    }
+
+    #hero {
+        padding: 1rem ;
+    }
+
+    #about .container {
+        margin: 5rem 0;
+    }
+
+    #about .container div:first-child {
+        padding: 1rem .5rem;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .flex div:nth-child(2) img {
+        display: block;
+        margin: 3rem auto !important;
+    }
+
+
+    .gallery2 {
+        flex-wrap: wrap;
+        height: 100%;
+        div{
+            margin-bottom: 3rem;
+            line-height: 2rem;
+        }
+    }
+
+
+    #menu{
+        padding: 4rem 2rem;
+    }
+    #menu ul li{
+        width: 100%;
+        margin-bottom: 4rem;
+        line-height: 1.7rem;
+
+    }
+    #menu ul li span {
+        left: 13rem;
+    }
+
+    #day-time {
+        padding: 0;
+    }
+    #day-time h4{
+        margin: 1.5rem 0;
+    }
+    #day-time div {
+        margin-bottom: 3rem;
+    }
+
+    #gallery,#contact {
+        padding: 3rem ;
+    }
+    #contact form {
+        width: 100%;
+    }
+}

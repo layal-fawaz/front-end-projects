@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كريم طبيعي للبشرة والشعر</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+    <!-- Header Banner -->
+    <div class="header-banner">
+        <div class="header-content">
+            <span>شحن مجاني للطلبات فوق 200 ريال</span>
+            <div class="limited-offer">عرض محدود</div>
+        </div>
+    </div>
+
+    <section id="hero">
+    <!-- Main Product Section -->
+    <div class="main-product">
+        <div class="container">
+            <div class="product-title">
+                <h1>كريم طبيعي للبشرة والشعر لتجديد الجمال</h1>
+                <p>منتج طبيعي 100% من أجود أنواع العسل والزيوت الطبيعية</p>
+            </div>
+
+            <!-- Product Image -->
+            <div class="product-image">
+                <div class="image-container">
+                    <div class="honey-jar">
+                        <div class="honey-jar-inner">
+                            عسل طبيعي
+                        </div>
+                    </div>
+                    <div class="natural-badge">طبيعي 100%</div>
+                </div>
+            </div>
+
+            <!-- Price Section -->
+            <div class="price-section">
+                <div class="price-display">
+                    <span class="current-price">199</span>
+                    <span class="currency">ريال</span>
+                    <span class="old-price">299 ريال</span>
+                </div>
+                <div class="discount-badge">وفر 100 ريال - خصم 33%</div>
+                <button class="order-btn" onclick="orderNow()">
+                    <svg class="cart-icon" viewBox="0 0 24 24">
+                        <path d="M7 4V2C7 1.45 7.45 1 8 1H16C16.55 1 17 1.45 17 2V4H20C20.55 4 21 4.45 21 5S20.55 6 20 6H19V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V6H4C3.45 6 3 5.55 3 5S3.45 4 4 4H7ZM9 3V4H15V3H9ZM7 6V19H17V6H7Z"/>
+                    </svg>
+                    اطلب الآن
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Statistics Section -->
+    <div class="statistics">
+        <div class="container">
+            <h2 class="stats-title">إحصائيات مذهلة</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number yellow">94%</div>
+                    <div class="stat-label">نسبة الرضا</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number green">15K+</div>
+                    <div class="stat-label">عميل راضي</div>
+                </div>
+            </div>
+            <div class="original-price">
+                <div class="original-price-number">299 ريال</div>
+                <div class="original-price-label">السعر الأصلي</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Variants -->
+    >
+    <div class="variants">
+        <div class="container">
+            <h3 class="variants-title">اختر المنتج المناسب لك</h3>
+            <div class="variants-grid">
+                <div class="variant-item" onclick="selectVariant('dry-skin')">
+                    <div class="variant-icon">
+                        <img src="assets/127e34aecd3e624b4cbcf4b5b26fd9e9.jpg" alt="للبشرة الجافة" class="variant-img" />
+                    </div>
+                    <p class="variant-name">للبشرة الجافة</p>
+                </div>
+                <div class="variant-item" onclick="selectVariant('mixed-skin')">
+                    <div class="variant-icon">
+                        <img src="assets/c66abaf1e43dee7de098a8f9c5348a34.jpg" alt="للبشرة المختلطة" class="variant-img" />
+                    </div>
+                    <p class="variant-name">للبشرة المختلطة</p>
+                </div>
+                <div class="variant-item" onclick="selectVariant('sensitive-skin')">
+                    <div class="variant-icon">
+                        <img src="assets/ae29074132a165a981ac6761260c7451.jpg" alt="للبشرة الحساسة" class="variant-img" />
+                    </div>
+                    <p class="variant-name">للبشرة الحساسة</p>
+                </div>
+                <div class="variant-item" onclick="selectVariant('damaged-hair')">
+                    <div class="variant-icon">
+                        <img src="assets/0e9ae6c2ea993de91bb42021d8720975.jpg" alt="للشعر التالف" class="variant-img" />
+                    </div>
+                    <p class="variant-name">للشعر التالف</p>
+                </div>
+                <div class="variant-item" onclick="selectVariant('dry-hair')">
+                    <div class="variant-icon">
+                        <img src="assets/04b5c99f7d85b2487f800f422aa5a5ce.jpg" alt="للشعر الجاف" class="variant-img" />
+                    </div>
+                    <p class="variant-name">للشعر الجاف</p>
+                </div>
+                <div class="variant-item" onclick="selectVariant('daily-use')">
+                    <div class="variant-icon">
+                        <img src="assets/a5045992c9c4d31134b036b2c889da0d.jpg" alt="للاستخدام اليومي" class="variant-img" />
+                    </div>
+                    <p class="variant-name">للاستخدام اليومي</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Before/After Section -->
+    <div class="before-after">
+        <div class="container">
+            <h3 class="before-after-title">النتائج قبل وبعد الاستخدام</h3>
+            
+            <!-- Comparison 1 -->
+            <div class="comparison">
+                <div class="comparison-grid">
+                    <div class="comparison-item">
+                        <div class="comparison-image">
+                            <img src="assets/e5442671f53b0b2f0a9428408c3b7ea1.jpg" alt="قبل" />
+                        </div>
+                        <p class="comparison-label">قبل</p>
+                    </div>
+                    <div class="comparison-item">
+                        <div class="comparison-image">
+                            <img src="assets/ea8624fbab9425c75e2d26c6a4cb7615.jpg" alt="بعد" />
+                        </div>
+                        <p class="comparison-label">بعد</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison 2 -->
+            <div class="comparison">
+                <div class="comparison-grid">
+                    <div class="comparison-item">
+                        <div class="comparison-image">
+                            <img src="assets/bca4a8bc90dc5081436f8e0d4b37d13c.jpg" alt="قبل" />
+                        </div>
+                        <p class="comparison-label">عيون متعبة</p>
+                    </div>
+                    <div class="comparison-item">
+                        <div class="comparison-image">
+                            <img src="assets/8aa68edcc14de73ba054a80dc7fea7f9.jpg" alt="بعد" />
+                        </div>
+                        <p class="comparison-label">عيون مشرقة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div class="final-cta">
+        <div class="container">
+            <h3 class="cta-title">احصل على بشرة مثالية الآن</h3>
+            <p class="cta-subtitle">مع ضمان استرداد المال خلال 30 يوم</p>
+            <button class="final-order-btn" onclick="finalOrder()">
+                اطلب الآن - 199 ريال فقط
+            </button>
+            <div class="features">
+                <span>شحن مجاني</span>
+                <span>•</span>
+                <span>دفع عند الاستلام</span>
+                <span>•</span>
+                <span>ضمان الجودة</span>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
