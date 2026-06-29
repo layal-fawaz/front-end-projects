@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Barlow Semi Condensed;
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    padding: 0 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+img {
+    float: left;
+    border-radius: 50%;
+    border: #fff solid 2px;
+    margin-right: 1rem;
+    width: 30px;
+}
+
+.block {
+    margin: 1rem;
+    border-radius: 5px;
+    padding: 1.5rem 2rem;
+}
+
+h3 {
+    margin: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#one,
+#two,
+#four h3,
+.name,
+.opacity {
+    color: #fff;
+}
+
+.opacity {
+    font-size: 13px;
+    opacity: .7;
+    line-height: 1.2rem;
+}
+
+.job {
+    opacity: .5;
+    color: #fff;
+}
+
+article .block:first-child {
+    background-color: hsl(263, 55%, 52%);
+    width: 28rem;
+  }
+  
+  article .block:nth-child(2) {
+    background-color: hsl(217, 19%, 35%);
+    width: 12rem;
+  }
+  
+  article .block:nth-child(3) {
+    background-color: #fff;
+    width: 13rem;
+  }
+  
+  article .block:nth-child(3) .name,
+  article .block:nth-child(3) .job,
+  article .block:nth-child(3) .opacity {
+    color: black;
+  }
+  
+  article .block:nth-child(3) .job {
+    opacity: 0.5;
+  }
+  
+  article .block:nth-child(4) {
+    background-color: hsl(219, 29%, 14%);
+    width: 27rem;
+    margin-left: -14rem;
+    h3{
+        color: #fff;
+    }
+  }
+  
+  article .block:nth-child(5) {
+    background-color: #fff;
+  }
+  
+  article .block:nth-child(5) .name,
+  article .block:nth-child(5) h3,
+  article .block:nth-child(5) .job,
+  article .block:nth-child(5) .opacity {
+    color: black;
+  }
+  
+  article .block:nth-child(5) .job {
+    opacity: 0.5;
+  }
+
+@media(max-width:768px) {
+    body {
+        padding: 0;
+    }
+
+    div {
+        width: auto !important;
+    }
+
+    article {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    article .block:nth-child(4) {
+        margin: 1rem;
+    }
+}
