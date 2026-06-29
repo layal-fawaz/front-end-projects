@@ -1,0 +1,152 @@
+@media(max-width:840px) {
+    body {
+        background-color: rgb(231, 227, 219);
+    }
+
+    section {
+        padding: 1rem !important;
+    }
+
+    #crafts_collection .collection {
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto;
+    }
+
+    #hero {
+        flex-wrap: wrap;
+    }
+
+    #hero .first_d {
+        padding: 1rem;
+
+        p {
+            width: 100%;
+
+        }
+    }
+
+    #hero div {
+        flex-wrap: wrap;
+
+        img {
+            margin: auto;
+        }
+    }
+
+    #design {
+        flex-wrap: wrap;
+        padding: 1rem !important;
+
+    }
+
+    #design .left {
+        padding: 0 !important;
+    }
+
+    #design video {
+        width: 100% !important;
+        margin: 3rem 0;
+    }
+
+    #gallery ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    /*------------------------------------------------------*/
+    #about {
+        height: 220vh !important;
+    }
+
+    #about div {
+        left: 1rem !important;
+        top: 5rem !important;
+    }
+
+    #about img:first-child {
+        width: 270px !important;
+        left: 1rem !important;
+        top: 18rem !important;
+
+    }
+
+    #about img:nth-child(2) {
+        left: 2rem !important;
+        top: 35rem !important;
+    }
+
+    #about img:nth-child(3) {
+        width: 270px !important;
+        left: 1rem !important;
+        top: 60rem !important;
+    }
+
+    #about h4 {
+        bottom: 7rem !important;
+    }
+
+
+    #blog .news {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+
+    #blog .news img {
+        width: 290px;
+    }
+
+    #contact div:first-child {
+        width: 100% !important;
+    }
+
+}
+
+@media(min-width:841px) and (max-width:1200px) {
+    #gallery ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    #about {
+        height: 250vh !important;
+    }
+
+    #about div {
+        left: 5rem !important;
+        top: 3rem !important;
+    }
+
+    #about img:first-child {
+
+        left: 5rem !important;
+        top: 18rem !important;
+        width: 350px !important;
+
+    }
+
+    #about img:nth-child(2) {
+        left: 5rem !important;
+        top: 33rem !important;
+        width: 350px !important;
+
+    }
+
+    #about img:nth-child(3) {
+        left: 5rem !important;
+        top: 55rem !important;
+    }
+
+
+    #about h4 {
+        bottom: 5rem;
+    }
+
+    #blog .news img {
+        width: 300px;
+    }
+
+    #contact div:first-child {
+        width: 100% !important;
+    }
+}
