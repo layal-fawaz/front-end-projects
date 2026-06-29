@@ -1,0 +1,158 @@
+@media (max-width: 768px) {
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    position: relative;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    transition: 0.3s ease;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+    transition: 0.3s ease;
+  }
+
+
+  nav {
+    padding: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    background: rgb(37, 37, 95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    z-index: 99;
+
+    li {
+      border-bottom: solid;
+      padding: 1rem;
+
+    }
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .hamburger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /*-------------------------------------------------------*/
+  #hero .background {
+    margin-bottom: 2rem;
+  }
+
+  #hero .background h2 {
+    padding: 4rem 0 0.5rem !important;
+    font-size: 1.3rem;
+  }
+
+  #hero .background p {
+    padding: 0 1rem !important;
+    font-size: 1rem !important;
+  }
+
+  #hero .background img {
+    height: 65vh;
+  }
+
+  #hero .fetures {
+    flex-direction: column;
+  }
+
+  #hero .content {
+    flex-direction: column;
+  }
+
+
+  #hero .content img {
+    width: 100%;
+  }
+
+  #hero .fetures div,
+  footer {
+    background-color: rgb(200, 170, 107);
+  }
+
+  /*-------------------------------------------------------*/
+  #about .about_us {
+    padding: 2rem !important;
+  }
+
+  #about div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #about article {
+    padding: 2rem !important;
+
+  }
+
+  #about article div {
+    margin: 3rem 0 !important;
+    padding: 2rem !important;
+
+    p {
+      margin: 0 !important;
+    }
+  }
+
+  #about article img {
+    border-radius: 1px !important;
+    margin: 2rem auto 1rem;
+  }
+
+  #contact form {
+    margin: 2rem !important;
+    padding: 0 !important;
+  }
+
+
+  #contact .info {
+    flex-direction: column;
+    padding: 8rem;
+  }
+
+
+  #contact button {
+    margin: 2rem auto !important;
+
+  }
+}

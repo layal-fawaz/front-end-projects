@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!--header-->
+  <header id="header">
+    <nav>
+      <h1>HOTEL</h1>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--end of header-->
+
+  <main>
+    <!--hero section-->
+    <section id="hero">
+      <div class="background">
+        <img src="assets/images/pexels-photo-594077.jpg" />
+        <h2><span>Enjoy</span> your stay in our hotel</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolor,
+          quasi similique velit dignissimos voluptates molestiae, totam ipsa
+          possimus quibusdam vero!
+        </p>
+        <button><a href="" class="capitalize">about hotel</a></button>
+      </div>
+      <div class="content">
+        <img src="assets/images/d (2).jpg" />
+
+        <div class="history">
+          <h3><span>the history </span> of our hotel</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Distinctio harum laudantium laborum ipsa. Repudiandae ipsum quae,
+            doloremque id numquam perferendis, ipsa aliquam ex odio officiis
+            autem accusantium sequi ut dolorum!
+          </p>
+          <button><a href="" class="capitalize">read more</a></button>
+        </div>
+      </div>
+
+      <div class="fetures">
+        <div>
+          <i class="fa-solid fa-utensils"></i>
+          <h4>meals</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab</p>
+        </div>
+        <div class="color">
+          <i class="fa-solid fa-dumbbell"></i>
+          <h4>fitness room</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-hotel"></i>
+          <h4>great location</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab</p>
+        </div>
+      </div>
+    </section>
+    <!--end of hero section-->
+
+    <!--about section-->
+    <section id="about">
+      <h2><span>about</span> us</h2>
+      <div class="about_us">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
+          doloremque esse cumque quia, nesciunt eos ex. Nam obcaecati soluta
+          consectetur culpa quasi debitis iste, in esse, voluptatibus, beatae
+          animi maiores.
+        </p>
+        <img src="assets/images/istockphoto-1448506100-612x612.jpg" />
+      </div>
+
+      <article>
+        <h2>what our guests saied</h2>
+        <div>
+          <img src="assets/images/pexels-photo-4370317.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            molestiae cumque iure quo earum. Ut, tenetur! Maxime officia odit
+            sit, magnam doloremque eos culpa.
+          </p>
+        </div>
+        <div>
+          <img src="assets/images/pexels-photo-16151259.webp" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            molestiae cumque iure quo earum. Ut, tenetur! Maxime officia odit
+            sit, magnam doloremque eos culpa.
+          </p>
+        </div>
+      </article>
+    </section>
+    <!--end of about section-->
+
+    <!--contact section-->
+    <section id="contact">
+      <h2><span>contact </span>with us</h2>
+
+      <form action="">
+        <div>
+          <label for="name">name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+
+        <div>
+          <label for="name">email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div>
+          <label for="name">message</label><br />
+          <textarea name="message" id=""></textarea>
+        </div>
+
+        <button type="submit">submit</button>
+      </form>
+      <div class="info">
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <h4>email</h4>
+          <a href="mailto:layalfrh@gmail.com">layalfrh@gmail.com</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          <h4>location</h4>
+          <p>P42j3302</p>
+          <p></p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <h4>phone number</h4>
+          <p>050303939</p>
+          <p></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    hotel LA &copy; 2025 ,created by layal
+    <br />
+    <a href=""><i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+  </footer>
+</body>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      hamburger.classList.remove('active');
+    });
+  });
+</script>
+
+</html>
